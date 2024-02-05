@@ -1,0 +1,219 @@
+	{% extends "base.html" %}
+	{% block cont %}
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+	<div class="section search-result-wrap">
+		<h1>BLOG</h1>
+		<div class="container-flude">
+			<div class="row posts-entry">
+				<div class="col-lg-8">
+					<div class="blog-entry d-flex blog-entry-search-item">
+						<div class="img-contian">
+							<a href='{% url "blogdetails" %}' class="img-link me-4">
+								<img src="{% static '/image/SWR-Pipe.jpg' %}" alt="Image" class="img-fluid" >
+							</a>
+						</div>
+						<div class="head-contain">
+							<!-- <span class="date">Apr. 14th, 2022 &bullet; <a href="#">Business</a></span> -->
+							<h2><a href="/Blog-Page/detail.html">SWR Pipes and Fittings</a></h2>
+							<p> A Complete Guide - Soil, Waste and
+								Stormwater (SWR) systems are an essential part of construction today,....</p>
+							<p><a href="{% url 'blogdetails' %}" class="btn btn-sm btn-outline-primary">Read More</a></p>
+						</div>
+					</div>
+
+					<div class="blog-entry d-flex blog-entry-search-item">
+						<div class="img-contian">
+							<a href="{% url 'blogdetail2' %}" class="img-link me-4">
+								<img src="{% static '/image/agri-and-fitting.jpg' %}" alt="Image" class="img-fluid">
+							</a>
+						</div>
+						<div>
+							<!-- <span class="date">Apr. 14th, 2022 &bullet; <a href="#">Business</a></span> -->
+							<h2><a href="blogdetail2/">Agri-Pipes and Fittings</a></h2>
+							<p>In a dynamic agricultural world where
+								resource use is important, agricultural pipes and fittings play and................</p>
+							<p><a href="{% url 'blogdetail2' %}" class="btn btn-sm btn-outline-primary">Read More</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="blog-entry d-flex blog-entry-search-item">
+						<div class="img-contian">
+							<a href="{% url 'blogdetail3' %}" class="img-link me-4">
+								<img src="{% static '/image/cpvc-pipe.jpg' %}" alt="Image" class="img-fluid">
+							</a>
+						</div>
+						<div>
+							<!-- <span class="date">Apr. 14th, 2022 &bullet; <a href="#">Business</a></span> -->
+							<h2><a href="blogdetail3">CPVC Pipes and Fittings</a></h2>
+							<p> Chlorinated Polyvinyl Chloride, or CPVC,
+								has emerged as a leading material in the plumbing industry,....</p>
+							<p><a href="{% url 'blogdetail3' %}" class="btn btn-sm btn-outline-primary">Read More</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="blog-entry d-flex blog-entry-search-item">
+						<div class="img-contian">
+							<a href="{% url 'blogdetail4' %}" class="img-link me-4">
+								<img src="{% static '/image/upvc-pipes.jpg' %}" alt="Image" class="img-fluid">
+							</a>
+						</div>
+						<div>
+							<!-- <span class="date">Apr. 14th, 2022 &bullet; <a href="#">Business</a></span> -->
+							<h2><a href="/Blog-Page/detail4.html">UPVC Pipes and Fittings</a></h2>
+							<p>Unplasticized polyvinyl chloride, commonly
+								known as
+								UPVC, has become a popular choice for ....</p>
+							<p><a href="{% url 'blogdetail4' %}" class="btn btn-sm btn-outline-primary">Read More</a>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-lg-4 sidebar">
+
+					<div class="sidebar-box">
+						<h3 class="heading">Popular Posts</h3>
+						<div class="post-entry-sidebar">
+							<ul>
+								<li>
+									<a href="#">
+										<div>
+											<img src="{% static '/image/cpvc-pipe.jpg' %}" alt="Image placeholder"
+												class="me-4 rounded">
+												
+										</div>
+										<div class="text">
+											<h4>CPVC Pipes and Fittings</h4>
+											
+											<div class="post-meta">
+												
+ 
+												<span class="mr-2">CPVC (Chlorinated Polyvinyl Chloride) Pipes and Fittings are a type of thermoplastic piping system that is widely used for conveying various fluids in residential, commercial, and industrial applications.</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div>
+											<img src="{% static '/image/upvc-pipes.jpg' %}" alt="Image placeholder" class="me-4 rounded">
+										</div>
+										<div class="text">
+											<h4>UPVC Pipes and Fittings</h4>
+											<div class="post-meta">
+												 
+												<span class="mr-2">UPVC Pipes and Fittings constitute a widely used thermoplastic piping system, known for its versatility and durability in conveying fluids. Unlike PVC, UPVC is unplasticized, making it rigid and suitable for various applications.</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<div>
+											<img src="{% static '/image/cpvc2.webp' %}" alt="Image placeholder" class="me-4 rounded">
+										</div>
+										<div class="text">
+											<h4>CPVC Pipes and Fittings</h4>
+											<div class="post-meta">
+												
+												<span class="mr-5">CPVC Pipes and Fittings are integral components of modern plumbing systems, known for their versatility and durability in conveying fluids.	 </span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rightFixed-btns" data-aos="zoom-out-left">
+		<ul>
+		  <li id="li">
+			<a href="https://wa.me/+919708035424?text=Please%20let%20me%20know%20more%20about%20your%20products%20and%20services!!"
+			target="_blank">
+			  <i class="fa-brands fa-whatsapp fa-beat" aria-hidden="true"></i>
+			  <div class="rightFixed-btns__content" id="content">
+				<small>WhatsApp</small><br>
+				<span>9708035424</span>
+			  </div>
+			</a>
+		  </li>
+		  <li id="li2" class="content2">
+			<a href="#">
+			  <i class="fa-solid fa-headset fa-beat"></i>
+			  <div class="rightFixed-btns__content" id="content2">
+				<small>Enquiry</small><br>
+				<span>Now</span>
+			  </div>
+			</a>
+		  </li>
+		  <li id="li3">
+			<a href="tel:9708035424">
+			  <i class="fa fa-phone fa-beat" aria-hidden="true"></i>
+			  <div class="rightFixed-btns__content" id="content3">
+				<small>Calling No.</small><br>
+				<span>9708035424</span>
+			  </div>
+			</a>
+		  </li>
+		</ul>
+	  </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
+	<!-- ----------- -->
+	<div class="popup1">
+		<div class="rak">
+			<div>
+				<i class="fa-solid fa-xmark" id="mark"
+					onclick="$(this).parent().parent().parent().css('display','none');"></i>
+				<h1>Enquiry Form</h1>
+				<table id="table1">
+					<tr>
+						<td>
+							<label id="l1">Name</label>
+							<input type="text" id="t" oninput="legend('#l1','#t')" placeholder="Name"
+								onfocusout="fgchek('#t')" onfocus="fgain('#t')">
+							<br><span></span>
+						</td>
+						<td>
+							<label id="l2">Contact</label>
+							<input type="text" id="t1" oninput="legend('#l2','#t1')" placeholder="Contact"
+								minlength="10" maxlength="10" onfocusout="fgchek('#t1')" onfocus="fgain('#t1')">
+							<br><span></span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label id="l3">Email Id</label>
+							<input type="text" id="t2" placeholder="Email Id" style="width: 95%;"
+								oninput="legend('#l3','#t2')" onfocusout="fgchek('#t2')" onfocus="fgain('#t2')">
+							<br><span id="t15"></span>
+						</td>
+					</tr>
+					<tr>
+						<td style="height: 12rem;" colspan="2">
+							<label id="l88">Message</label>
+							<textarea placeholder="Message" id="t100" oninput="legend('#l88','#t100')"></textarea>
+							<br><span></span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<button>&#x2713; Submit</button>
+							<!-- <input type="button" value="&#x2713; Submit"> -->
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+	<script src="{% static 'js/scrolltop.js' %}" type="text/javascript"></script>
+	<script src="{% static 'js/popup.js' %}" type="text/javascript"></script>
+	{% endblock cont %}

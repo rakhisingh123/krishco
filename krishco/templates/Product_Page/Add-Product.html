@@ -1,0 +1,228 @@
+
+      {% extends "base.html" %}
+      {% block cont %}
+      {% load static %}
+      <link rel="stylesheet" href="{% static '/css/add-product.css' %}">
+      <link rel="stylesheet" href="{% static '/css/add-popup.css' %}">
+    <!-- ---------------------------------------social media link---------- -->
+    <div class="rightFixed-btns" data-aos="zoom-out-left">
+        <ul>
+          <li id="li">
+            <a href="https://wa.me/+919708035424?text=Please%20let%20me%20know%20more%20about%20your%20products%20and%20services!!"
+            target="_blank">
+              <i class="fa-brands fa-whatsapp fa-beat" aria-hidden="true"></i>
+              <div class="rightFixed-btns__content" id="content">
+                <small>WhatsApp</small><br>
+                <span>9708035424</span>
+              </div>
+            </a>
+          </li>
+          <li id="li2" class="content2">
+            <a href="#">
+              <i class="fa-solid fa-headset fa-beat"></i>
+              <div class="rightFixed-btns__content" id="content2">
+                <small>Enquiry</small><br>
+                <span>Now</span>
+              </div>
+            </a>
+          </li>
+          <li id="li3">
+            <a href="tel:9708035424">
+              <i class="fa fa-phone fa-beat" aria-hidden="true"></i>
+              <div class="rightFixed-btns__content" id="content3">
+                <small>Calling No.</small><br>
+                <span>9708035424</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
+    <section class="product-details">
+        <div class="main">
+            <div class="main1">
+                <img src="{% static '/image/kiwi-self-primering-pump.jpg' %}" alt="kiwi-self-primering">
+            </div>
+            <div class="main2">
+                <h2>SELF PRIMING PUMP</h2>
+                <!-- <p class="heading"><i>Hot & Cold Water Plumbing System</i></p> -->
+                <p>KRISHCO Regenerative Self Priming Pumpsets are made from top-grade castings, finest components and high quality gun metal using state-of-the-art technology, to conform to the latest International Standards. Each & every stage in the manufacturing process is closely monitored through stringent quality tests to ensure impeccable standards, superior performance and unmatched durability. Pump volute chambers and impellers are designed to give the best hydraulic efficiency. These pumpsets are powered by totally enclosed fan cooled two pole motors with stators of the motors are made up of low att loss lamination and dynamically balanced rotors for higher efficiency. These pumpsets are wound with high grade enameled copper wire and are fitted with thermal overload protector.</p>
+            </div>
+        </div>
+
+        <!-- -----------------------------Other Products ------------------- -->
+        <h1 style="text-align: center; color: green; font-size: 4rem; margin-bottom: 3rem; font-weight: bold; letter-spacing: 2px;">SELF PRIMING PUMP PRODUCTS</h1>
+        <div class="other">
+            <div><img src="{% static '/image/vibe-series.jpg' %}" alt="vibe-series"><br>
+                <div onclick="$('.popup-products').css('transform','scale(1)')">Know More ></div>
+            </div>
+            <div><img src="{% static '/image/kiwi-self-primering-pump.jpg' %}" alt="kiwi-self-primering-pump"><br>
+                <div>Know More ></div>
+            </div>
+            <div><img src="{% static '/image/turtle-series-pump.jpg' %}" alt="turtle-series-pump"><br>
+                <div>Know More ></div>
+            </div>
+            <div><img src="{% static '/image/tiger-self-primering-pump.jpg' %}" alt="tiger-self-primering-pump"><br>
+                <div>Know More ></div>
+            </div>
+            <div><img src="{% static '/image/1HP-Hippo.jpg' %}" alt="1hp-Hippo.jpg"><br>
+                <div>Know More ></div>
+            </div>
+            <!-- <div><img src="/image/1HP-Hippo.jpg" alt=""><br>
+                <div>Know More ></div>
+            </div>
+            <div><img src="/image/1HP-Hippo.jpg" alt=""><br>
+                <div>Know More ></div>
+            </div> -->
+        </div>
+        <div class="features">
+            <div class="title">
+                    <ul>
+                        <li style="color: blue; background-color: white;" class="title1">Features & Benefits</li><span>|</span>
+                        <li class="title2">Fields of Application</li><span>|</span>
+                        <li class="title3">Standards & Specifications</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="details details1">
+                <h1>Features & Benefits</h1>
+                <ul>
+                    <li> <i class="fa-solid fa-angle-right"></i> Corrosion Resistence</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> Chemical Resistence</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> 40-Mircon Filter Mesh</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> Non-Corrsive Strainer (S.S.)</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> EDPM Rubber Gasket</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> UPVC or CPVC Construnction</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> Convenient Removable Strainer Basket</li>
+                </ul>
+            </div>
+            <div class="details details2">
+                <h1>Fields Of Application</h1>
+                <ul>
+                    <li> <i class="fa-solid fa-angle-right"></i> Main water Supply line</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> Water Tank Outlet</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> Delivery Lines</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> Bore Well To Distribution Line</li>
+                </ul>
+            </div>
+            <div class="details details3">
+                <h1>Standard & Specifications</h1>
+                <ul>
+                    <li> <i class="fa-solid fa-angle-right"></i> Basket Material: Stainless Steel (40-Mircon)</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> Sealing Material: EPDM</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> End Connection Type :Socket</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> Pressure Rating : 150 PSI</li>
+                    <li> <i class="fa-solid fa-angle-right"></i> Body Material :UPVC/CPVC</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="popup-products">
+        <div class="main">
+            <i class="fa-solid fa-xmark" onclick="$(this).parent().parent().css({'transform':'scale(0)','transition':'.3s'})"></i>
+            <div class="main1">
+                <img src="/image/kiwi-remove-bg.png" alt="">
+            </div>
+            <div class="main2">
+                <h2 style="margin-bottom: 1rem;">VIBE SERIES</h2>
+                <button style="margin-bottom: 1rem;">Specification</button>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="">Suction Lift</label></td>
+                            <td><span for="">Up to 6 meter</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Motor Rating</label></td>
+                            <td><span for="">0.37-1.10 kW (0.50-1.50HP)</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Supply Phase</label></td>
+                            <td><span for="">Single Phase</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Pipe Size</label></td>
+                            <td><span for="">1" X 1"</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Head</label></td>
+                            <td><span for="">Up to 40 Metres</span></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Discharge</label></td>
+                            <td><span for="">Up to 2850 LPH</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <div class="popup1">
+      <div class="rak">
+        <div>
+          <i class="fa-solid fa-xmark" id="mark" onclick="$(this).parent().parent().parent().css('display','none');"></i>
+          <h1>Enquiry Form</h1>
+          <table id="table1">
+            <tr>
+              <td>
+                <label id="l1">Name</label>
+                <input type="text" id="t" oninput="legend('#l1','#t')" placeholder="Name" onfocusout="fgchek('#t')"
+                  onfocus="fgain('#t')">
+                <br><span></span>
+              </td>
+              <td>
+                <label id="l2">Contact</label>
+                <input type="text" id="t1" oninput="legend('#l2','#t1')" placeholder="Contact" minlength="10"
+                  maxlength="10" onfocusout="fgchek('#t1')" onfocus="fgain('#t1')">
+                <br><span></span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label id="l3">Email Id</label>
+                <input type="text" id="t2" placeholder="Email Id" style="width: 95%;" oninput="legend('#l3','#t2')"
+                  onfocusout="fgchek('#t2')" onfocus="fgain('#t2')">
+                <br><span id="t15"></span>
+              </td>
+            </tr>
+            <tr>
+              <td style="height: 12rem;" colspan="2">
+                <label id="l88">Message</label>
+                <textarea placeholder="Message" id="t100" oninput="legend('#l88','#t100')"></textarea>
+                <br><span></span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button>&#x2713; Submit</button>
+                <!-- <input type="button" value="&#x2713; Submit"> -->
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="{% static '/js/scrolltop.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/popup.js' %}" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $('.features .title ul li').hover(function () {
+                    $('.features .title ul li').css({'background-color':'transparent','color':'black'});
+                    $(this).css({'background-color':'white','color':'blue'});
+                    $('.details').css('display', 'none'); 
+                    if($(this).attr('class')=='title1'){
+                        $('.details1').css('display', 'block');
+                    }
+                    else if($(this).attr('class')=='title2'){
+                        $('.details2').css('display', 'block');
+                    }
+                    else if($(this).attr('class')=='title3'){
+                        $('.details3').css('display', 'block');
+                    }
+                }
+            );
+        });
+    </script>
+    {% endblock cont %}

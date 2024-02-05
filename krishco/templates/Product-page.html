@@ -1,0 +1,395 @@
+
+  {% extends "base.html" %}
+  {% block cont %}
+  {% load static %}
+  <!-- ---------------------------------------social media link---------- -->
+  <link rel="stylesheet" href="{% static 'css/product.css' %}">
+  <div class="rightFixed-btns" data-aos="zoom-out-left">
+    <ul>
+      <li id="li">
+        <a href="https://wa.me/+919708035424?text=Please%20let%20me%20know%20more%20about%20your%20products%20and%20services!!"
+        target="_blank">
+          <i class="fa-brands fa-whatsapp fa-beat" aria-hidden="true"></i>
+          <div class="rightFixed-btns__content" id="content">
+            <small>WhatsApp</small><br>
+            <span>9708035424</span>
+          </div>
+        </a>
+      </li>
+      <li id="li2" class="content2">
+        <a href="#">
+          <i class="fa-solid fa-headset fa-beat"></i>
+          <div class="rightFixed-btns__content" id="content2">
+            <small>Enquiry</small><br>
+            <span>Now</span>
+          </div>
+        </a>
+      </li>
+      <li id="li3">
+        <a href="tel:9708035424">
+          <i class="fa fa-phone fa-beat" aria-hidden="true"></i>
+          <div class="rightFixed-btns__content" id="content3">
+            <small>Calling No.</small><br>
+            <span>9708035424</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
+  <section>
+    <div class="main">
+      <aside>
+        <ul class="list">
+          <li style="background-color: white;font-weight:bolder;">
+            <img src="{% static 'image/1hp.png' %}" alt="1hp.png" srcset=""><span>Residential Pumps</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="{% static 'image/2HP-Monoblock.jpg' %}" alt="2hp-Monoblock.jpg" srcset=""><span>Agricultural Pumps</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <!-- <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Solar Water Pumps</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li> -->
+          <!-- <li>
+            <img src="image/agriculture.jpg" alt="" srcset=""><span>Specialty Pumps</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li> -->
+          <li>
+            <img src="{% static 'image/cpvc-pipe.jpg' %}" alt="cpvc-pipe" srcset=""><span>CPVC Pipes & Fittings</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="{% static 'image/UPVC-AND-FITTING-PIPE.png' %}" alt="upvc-and-Fittings-pipe" srcset=""><span>UPVC Pipes & Fittings</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="{% static 'image/swr-pipe-icon-removebg-preview.png' %}" alt="SWR Pipes Fittings" srcset=""><span>SWR Pipes & Fittings</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="{% static 'image/AGRICULTURE-PUMP.png' %}" alt="Agricultural-pumps" srcset=""><span>Agricultural Pipes & Fittings</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="{% static 'image/casing-pipe-removebg-preview.png' %}" alt="casing-pipe" srcset=""><span>UPVC Casing Pipes</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="{% static 'image/colum.png' %}" alt="colum" srcset=""><span>Column Pipes</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <li>
+            <img src="{% static 'image/water-tank.jpg' %}" alt="water-tank" srcset=""><span>Water Tanks</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li>
+          <!-- <li>
+            <img src="image/solvent.jpg" alt="" srcset=""><span>Solvent Cement</span>
+            <i class="fa-solid fa-angle-right right"></i>
+          </li> -->
+        </ul>
+      </aside>
+      <button class="butun"><i class="fa-solid fa-bars-progress"></i>
+        <i class="fa-solid fa-close" style="display: none;"></i>
+      </button>
+      <div class="products resi" >
+        <h2>Residential Pumps</span></h2>
+        <div class="box">
+          <div class="product-name">SELF PRIMING PUMP</div>
+          <div class="pic"><img src="{% static 'image/self-prumering-pump.jpg' %}" alt="self-prumering"></div>
+          <a href="{% url 'addproduct' %}">
+            <div class="vm" onclick="location.href=''">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+        </div>
+        <div class="box">
+          <div class="product-name">SHALLOW WELL</div>
+          <div class="pic"><img src="{% static 'image/Shallow-well-pump.jpg' %}" alt="Shallow well"></div>
+          <a href="{% url 'Shallowwell' %}">
+            <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+        </div>
+        <div class="box">
+          <div class="product-name">SUBMERSIBLE</div>
+          <div class="pic"><img src="{% static 'image/sermisible.jpg' %}
+            " alt=""></div>
+            <a href="{% url 'Submersiblepump' %}" alt="Submersible pump">
+              <div class="vm" onclick="location.href='/Product-Page/Submersible-pump.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+            </a>
+          
+        </div>
+        <div class="box">
+          <div class="product-name">OPENWELL SUBMERSIBLE</div>
+          <div class="pic"><img src="{% static 'image/OPENWELL-SUBMERSIBLE-pump.jpg' %}" alt="openwell-submersible"></div>
+          <a href="{% url 'openwellsubmersible' %}">
+            <div class="vm" onclick="location.href='/Product-Page/Openwell-Submersible.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+          
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="{% static 'image/JET-PUMPS.jpg' %}" alt="jet-pump"></div>
+          <a href="{% url 'jet' %}">
+            <div class="vm" onclick="location.href='/Product-Page/jet.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+         
+        </div>
+      </div>
+      <div class="products agri" style="display: none;">
+        <h2>Agricultural Pumps</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="{% static 'image/AGRICULTURAL-MONOBLOCKS.jpg' %}" alt="Agricultural Monoblock.jpg"></div>
+          <a href="{% url 'agruculturalmonoblocks' %}">
+            <div class="vm" onclick="location.href='/Product-Page/agrucultural-monoblocks.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+         
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="{% static 'image/AGRICULTURAL-SUBMERSIBLES.jpg' %}" alt="Agricultural submersible"></div>
+          <a href="{% url 'agriculturalsubmersible' %}">
+            <div class="vm" onclick="location.href='/Product-Page/agricultural-Submersible.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+         
+        </div>
+        <!-- <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="image/HORIZONTAL-OPENWEL.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div> -->
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="{% static 'image/VERTICAL-OPENWELL.jpg' %}" alt="vertical-openwell"></div>
+          <a href="{% url 'verticalopenwell' %}">
+            <div class="vm" onclick="location.href='/Product-Page/vertical-openwell.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+          
+        </div>
+        <!-- <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="image/JET-PUMPS.jpg" alt=""></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div> -->
+      </div>
+      <div class="products solar-water" style="display: none;">
+        <h2>Solar Water Pumps</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <div class="pic"><img src="{% static 'image/AGRICULTURAL-MONOBLOCKS.jpg' %}" alt="Agricultural-Monoblock.jpg"></div>
+          <div class="vm" >View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="{% static 'image/AGRICULTURAL-SUBMERSIBLES.jpg' %}" alt="Agricultural-submersible"></div>
+          <a href="{% url 'agriculturalsubmersible' %}">
+            <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="{% static 'image/HORIZONTAL-OPENWEL.jpg' %}" alt="HORIZONTAL-openwell"></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="{% static 'image/VERTICAL-OPENWELL.jpg' %}" alt="vertical-openwell"></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="{% static 'image/JET-PUMPS.jpg' %}" alt="jet-pump"></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products speciality" style="display: none;">
+        <h2>Specialty Pumps</h2>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL MONOBLOCKS</div>
+          <a href="{% url 'agruculturalmonoblocks' %}">
+            <div class="pic"><img src="{% static 'image/AGRICULTURAL-MONOBLOCKS.jpg' %}" alt="Agricultural-MONOBLOCKS"></div>
+            <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+         
+        </div>
+        <div class="box">
+          <div class="product-name">AGRICULTURAL SUBMERSIBLES</div>
+          <div class="pic"><img src="{% static 'image/AGRICULTURAL-SUBMERSIBLES.jpg' %}" alt="Agricultural-submersible"></div>
+
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">HORIZONTAL OPENWELL</div>
+          <div class="pic"><img src="{% static 'image/HORIZONTAL-OPENWEL.jpg' %}" alt="HORIZONTAL-openwell"></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="box">
+          <div class="product-name">VERTICAL OPENWELL</div>
+          <div class="pic"><img src="{% static 'image/VERTICAL-OPENWELL.jpg' %}" alt="vertical-openwell"></div>
+          {% comment %} <a href="{% url 'verticalopenwell' %}"> {% endcomment %}
+            <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+          {% comment %} </a> {% endcomment %}
+        
+        </div>
+        <div class="box">
+          <div class="product-name">JET PUMPS</div>
+          <div class="pic"><img src="{% static 'image/JET-PUMPS.jpg' %}" alt="jet-pump"></div>
+          <div class="vm">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+      <div class="products cpvc-pipe" style="display: none;">
+        <h2>CPVC Pipes & Fittings</h2>
+        <div class="box">
+          <div class="product-name">CPVC Pipes & Fittings</div>
+          <div class="pic"><img src="{% static 'image/cpvc-pipe.jpg' %}" alt=""cpvc pipe and Fittings></div>
+          <a href="{% url 'CPVCPipesFittings' %}">
+            <div class="vm" onclick="location.href='/Product-Page/CPVC-Pipe-Fittings.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+         
+        </div>
+      </div>
+      <div class="products upvc-pipe" style="display: none;">
+        <h2>UPVC Pipes & Fittings</h2>
+        <div class="box">
+          <div class="product-name">UPVC Pipes & Fittings</div>
+          <div class="pic"><img src="{% static 'image/upvc-pipes.jpg' %}" alt="upvc-pipe and Fittings"></div>
+          <a href="{% url 'UPVCPipeFittings' %}">
+            <div class="vm" onclick="location.href='/Product-Page/UPVC-Pipe-Fittings.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+          
+        </div>
+      </div>
+      <div class="products sewerage-pipe" style="display: none;">
+        <h2>SWR Pipes & Fittings</h2>
+        <div class="box">
+          <div class="product-name">SWR Pipes & Fittings</div>
+          <div class="pic"><img src="{% static 'image/SWR-Pipe.jpg' %}" alt="SWR Pipes Fittings"></div>
+          <a href="{% url 'SWRPipesFittings' %}">
+            <div class="vm" onclick="location.href='/Product-Page/SWR-Pipe-Fittings.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+          
+        </div>
+      </div>
+      <div class="products agri-pipe" style="display: none;">
+        <h2>Agricultural Pipes & Fittings</h2>
+        <div class="box">
+          <div class="product-name">Agricultural Pipes & Fittings</div>
+          <div class="pic"><img src="{% static 'image/SWR-Pipe.jpg' %}" alt="Agricultural pipe and Fittings"></div>
+          <a href="{% url 'agriculturalpipe' %}">
+            <div class="vm" onclick="location.href='/Product-Page/Agricultural-Pipe-Fittings.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+        </div>
+      </div>
+      <div class="products upvc-casing-pipe" style="display: none;">
+        <h2>UPVC Casing Pipes</h2>
+        <div class="box">
+          <div class="product-name">UPVC Casing Pipes</div>
+          <div class="pic"><img src="{% static 'image/upvc-pipes.jpg' %}" alt="upvc casing pipe"></div>
+          <a href="{% url 'UPVCCasingPipes' %}">
+          <div class="vm" onclick="location.href='/Product-Page/UPVC-Casing-Pipes.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+          </a>
+        </div>
+      
+      </div>
+      <div class="products column-pipe" style="display: none;">
+        <h2>Column Pipes</h2>
+        <div class="box">
+          <div class="product-name">Column Pipes</div>
+          <div class="pic"><img src="{% static 'image/colum.png' %}" alt="colum pipe"></div>
+          <a href="{% url 'colum' %}"><div class="vm" onclick="location.href='/Product-Page/colum.html'">View More <i class="fa-solid fa-arrow-right"></i></div></a>
+          
+        </div>
+       
+      </div>
+      <div class="products water-tank" style="display: none;">
+        <h2>Water Tanks</h2>
+        <div class="box">
+          <div class="product-name">Water Tanks</div>
+          <div class="pic"><img src="{% static 'image/water-tank.jpg' %}" alt="Water tanks"></div>
+          <a href="{% url 'watertank' %}"> <div class="vm" onclick="location.href='Product-Page/water-tank.html'">View More <i class="fa-solid fa-arrow-right"></i></div></a>
+         
+        </div>
+       
+      </div>
+      <div class="products solvent-cement" style="display: none;">
+        <h2>Solvent Cement</h2>
+        <div class="box">
+          <div class="product-name">Solvent Cement</div>
+          <div class="pic"><img src="{% static 'image/solvent.jpg' %}" alt="Solvent cement"></div>
+          <div class="vm" onclick="location.href='Product-Page/solvent-Cement.html'">View More <i class="fa-solid fa-arrow-right"></i></div>
+        </div> 
+ 
+      </div>
+    </div>
+  </section>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-beat"></i></button>
+  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button> -->
+
+  <div class="popup1">
+    <div class="rak">
+      <div>
+          <i class="fa-solid fa-xmark" id="mark" onclick="$(this).parent().parent().parent().css('display','none');"></i>
+          <h1>Enquiry Form</h1>
+          <table id="table1">
+              <tr>
+                  <td>
+                    <label id="l1">Name</label>
+                    <input type="text" id="t" oninput="legend('#l1','#t')" placeholder="Name" onfocusout="fgchek('#t')" onfocus="fgain('#t')">
+                    <br><span></span>
+                  </td>
+                  <td>
+                    <label id="l2">Contact</label>
+                    <input type="text" id="t1" oninput="legend('#l2','#t1')" placeholder="Contact" minlength="10" maxlength="10" onfocusout="fgchek('#t1')" onfocus="fgain('#t1')">
+                    <br><span></span>
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                    <label id="l3">Email Id</label>
+                    <input type="text" id="t2" placeholder="Email Id" style="width: 95%;" oninput="legend('#l3','#t2')" onfocusout="fgchek('#t2')" onfocus="fgain('#t2')">
+                    <br><span id="t15"></span>
+                  </td>
+              </tr>
+              <tr>
+                <td style="height: 12rem;" colspan="2">
+                  <label id="l88">Message</label>
+                  <textarea placeholder="Message" id="t100" oninput="legend('#l88','#t100')"></textarea>
+                  <br><span></span>
+                </td>
+              </tr>
+              <tr>
+                  <td colspan="2">
+                    <button>&#x2713; Submit</button>
+                    <!-- <input type="button" value="&#x2713; Submit"> -->
+                  </td>
+              </tr>
+          </table>
+      </div>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  <script src="{% static 'js/scrolltop.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/popup.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/product.js' %}" type="text/javascript"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script>
+    AOS.init();
+    $(document).ready(function () {
+      setInterval(productbar,100);
+      var a = 0;
+      $('.fa-bars').click(function () {
+        if (a == 0) {
+          $('.nav').css({ 'right': '0rem', 'transition': '.3s all linear' })
+          a = 1;
+        }
+        else if (a == 1) {
+          $('.nav').css({ 'right': '-21rem', 'transition': '.3s all linear' })
+          a = 0;
+        }
+      })
+    });
+    
+  </script>
+  {% endblock cont %}
